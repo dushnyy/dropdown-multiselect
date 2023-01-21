@@ -25,7 +25,7 @@ const ListLanguages: React.FC<ListLanguagesT> = (props) => {
                 <label className={styles.listItemLabel}>
 
                     <div className={styles.listItemWrap}>
-                        <img src={`/icons/lang/${lang.code}.svg`} alt={`флаг ${lang.lang}`}/>
+                        <img src={`icons/lang/${lang.code}.svg`} alt={`флаг ${lang.lang}`}/>
 
                         {lang.lang}
                     </div>
