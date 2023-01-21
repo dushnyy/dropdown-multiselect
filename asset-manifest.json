@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dropdown-multiselect/static/css/main.d4b1f113.css",
-    "main.js": "/dropdown-multiselect/static/js/main.7b061c78.js",
+    "main.js": "/dropdown-multiselect/static/js/main.3e7849a9.js",
     "static/js/787.6804c560.chunk.js": "/dropdown-multiselect/static/js/787.6804c560.chunk.js",
     "index.html": "/dropdown-multiselect/index.html",
     "static/media/delete.svg": "/dropdown-multiselect/static/media/delete.019d790bfba6ecf5df62914d38070c83.svg",
@@ -9,11 +9,11 @@
     "static/media/checkbox.svg": "/dropdown-multiselect/static/media/checkbox.b5a6fc0c336dab8f426c.svg",
     "static/media/arrow.svg": "/dropdown-multiselect/static/media/arrow.df40072b4982ff0dcb0bd715bea6fccd.svg",
     "main.d4b1f113.css.map": "/dropdown-multiselect/static/css/main.d4b1f113.css.map",
-    "main.7b061c78.js.map": "/dropdown-multiselect/static/js/main.7b061c78.js.map",
+    "main.3e7849a9.js.map": "/dropdown-multiselect/static/js/main.3e7849a9.js.map",
     "787.6804c560.chunk.js.map": "/dropdown-multiselect/static/js/787.6804c560.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d4b1f113.css",
-    "static/js/main.7b061c78.js"
+    "static/js/main.3e7849a9.js"
   ]
 }
