@@ -1,0 +1,180 @@
+.container {
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropDown {
+    width: 400px;
+}
+
+.activeListItem {
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 6px 12px;
+    margin: 4px;
+    background: #F4F4F4;
+    border-radius: 8px;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.title {
+    color: #333;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0 0 4px 0;
+}
+
+.activeList {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    margin: 0 0 8px 0;
+    border-radius: 10px;
+    list-style-type: none;
+    background-color: #FFF;
+    border: 1px solid #C1C1C1;
+    padding: 5px 25px 5px 6px;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.activeListItem button {
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.activeListItem:hover {
+    box-shadow: 0 2px 5px rgba(51, 51, 51, 0.15);
+}
+
+.activeList:hover {
+    box-shadow: 0 2px 5px rgba(51, 51, 51, 0.15);
+}
+
+.arrow {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translate(0%, -50%) rotate(180deg);
+    transition: transform 0.2s ease-in-out;
+}
+
+.arrowActive {
+    transform: rotate(0deg) translate(0%, -50%);
+}
+
+.listLang {
+    padding-top: 16px;
+    background: #FFF;
+    box-shadow: 0 4px 32px rgba(51, 51, 51, 0.15);
+    border-radius: 12px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    will-change: max-height;
+    transition: opacity 0.3s ease-out, max-height 0.5s linear;
+}
+
+.listLang.open {
+    opacity: 1;
+    max-height: 500px;
+}
+
+.searchInput {
+    margin: 0 16px;
+    padding: 10px 36px;
+    height: 40px;
+    width: calc(100% - 32px);
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    display: inline-block;
+    background-image: url("/src/ui/icons/search.svg");
+    background-repeat: no-repeat;
+    background-position: 13px 13px;
+    background-size: 14px 14px;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.listItem {
+    border-bottom: 1px solid #F4F4F4;
+}
+
+.listItemWrap {
+    display: flex;
+    align-items: center;
+}
+
+.listItemWrap img {
+    margin-right: 10px;
+}
+
+.listItemLabel {
+    cursor: pointer;
+    justify-content: space-between;
+    display: flex;
+    padding: 14px 16px;
+}
+
+.listItemCheckboxCustom {
+    display: inline-block;
+    background-color: #FFF;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #C1C1C1;
+    border-radius: 6px;
+    position: relative;
+}
+
+.listItemCheckboxCustom:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url("/src/ui/icons/checkbox.svg");
+    background-repeat: no-repeat;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.listItemCheckboxCustom.active.listItemCheckboxCustom:before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.listItemCheckbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.notFound {
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 6px 12px;
+    width: 100%;
+    text-align: center;
+}
