@@ -48,7 +48,10 @@ const Dropdown = () => {
 
     const [languages, setLanguages] = useState<LanguagesT[]>(initialLanguages)
     const changeLanguage = (e: ChangeEvent<HTMLInputElement>) => {
-        setLanguages(initialLanguages.filter(l => l.lang.toLowerCase().includes(e.currentTarget.value.toLowerCase())))
+        setLanguages(initialLanguages
+            .filter(l => l.lang.toLowerCase().includes(e.currentTarget.value.toLowerCase()))
+            .map(l => selectedLang.filter(f => f.lang.includes(l.lang)).length ? {...l, checked: true} : l)
+        )
     }
 
     return (
